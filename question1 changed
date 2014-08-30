@@ -1,0 +1,5 @@
+ignitesolutions
+===============
+import re
+str1=re.sub(r'[\-a-zA-Z]+', lambda x: x.group(0)[::-1],'We are at Ignite Solutions! Their email-id is careers@ignitesol.com')
+print str1
