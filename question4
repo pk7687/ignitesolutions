@@ -1,0 +1,24 @@
+ignitesolutions-question4 PartA
+===============
+# Part A-Question 4 Solution
+
+term_value_1 = 1 #1 term of series which is 1
+term_value_2 =2 #2 term of series which is 2
+term_value_3 =0 #term of series that will hold the sum of previous two terms
+sum=2
+
+print term_value_1,"\n ",term_value_2
+
+while True: # lopp runs till the value satisfies the condition 
+	
+	term_value_3 = term_value_1 + term_value_2 #calculation of the term_value_3 of fibonacci series
+	if term_value_3>=4000000: #check for term_value to be less than 4million
+		break;#exit
+	if term_value_3%2==0: #checks for even terms in series
+		sum = sum + term_value_3
+	print term_value_3
+	term_value_1 = term_value_2 
+	term_value_2 = term_value_3 
+
+print "The sum of even terms in fibonacci series below 4 million is ",sum
+
