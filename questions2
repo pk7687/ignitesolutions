@@ -1,0 +1,12 @@
+ignitesolutions/question2-PartA
+===============
+#Part A-question2 Solution
+
+initial_sum =0 # to store the sum of the divisible numbers
+for limit in range(1,1000):  
+	if limit%3==0 or limit%5==0: #checking divisibility by 5 or 3
+		initial_sum = initial_sum + limit # calculating sum
+#loop terminates
+
+print "Sum of divisble numbers by 3 and 5 are \n",initial_sum 
+		
